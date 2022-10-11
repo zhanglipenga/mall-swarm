@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://nacos-registry:8848
+        namespace: 03f9ae05-459a-4bc7-bf8d-8ad4fd026608
+      config:
+        server-addr: http://nacos-registry:8848
+        namespace: 03f9ae05-459a-4bc7-bf8d-8ad4fd026608
+        file-extension: yaml
+logging:
+  level:
+    root: info

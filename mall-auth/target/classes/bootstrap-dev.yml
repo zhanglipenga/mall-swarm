@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://192.168.244.131:8848
+        namespace: f983662b-06be-48c2-a180-d7cc4958a555
+      config:
+        server-addr: http://192.168.244.131:8848
+        namespace: f983662b-06be-48c2-a180-d7cc4958a555
+        file-extension: yaml
+logging:
+  level:
+    root: debug

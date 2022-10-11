@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7eee458-af62-4814-a6bd-12a050324bcc" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectImports</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.class" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/mall/MallAdminApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\apache-maven-3.5.0\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.5.0" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="280" />
+    <option name="y" value="30" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectId" id="2E1CH5Qgq0WmIJuB8WIPNJhds6J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mall-swarm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Intellij IDEA/mall-swarm",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5827586",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "4ce4c7704b42dace7d5870b59bec1068",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Intellij IDEA\mall-swarm\mall-swarm\mall-admin\src\main\resources" />
+      <recent name="E:\Intellij IDEA\mall-swarm\mall-swarm\mall-monitor\src\main\resources" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 246 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MallDemoApplicationTests.testLogStash">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallDemoApplicationTests.testLogStash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.macro.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.macro.mall" />
+      <option name="MAIN_CLASS_NAME" value="com.macro.mall.MallDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testLogStash" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="mall-swarm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.MallAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.auth.MallAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.MallDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.MallGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallMonitorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-monitor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.MallMonitorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-portal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.portal.MallPortalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.search.MallSearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MallDemoApplicationTests.testLogStash" />
+      <item itemvalue="Spring Boot.MallGatewayApplication" />
+      <item itemvalue="Spring Boot.MallSearchApplication" />
+      <item itemvalue="Spring Boot.MallMonitorApplication" />
+      <item itemvalue="Spring Boot.MallDemoApplication" />
+      <item itemvalue="Spring Boot.MallPortalApplication" />
+      <item itemvalue="Spring Boot.MallAuthApplication" />
+      <item itemvalue="Spring Boot.MallAdminApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MallDemoApplicationTests.testLogStash" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lenovo\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7eee458-af62-4814-a6bd-12a050324bcc" name="Default" comment="" />
+      <created>1656382013057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656382013057</updated>
+      <workItem from="1656382014711" duration="4407000" />
+      <workItem from="1656639495951" duration="1571000" />
+      <workItem from="1658219421409" duration="1252000" />
+      <workItem from="1661751690075" duration="341000" />
+      <workItem from="1661753621107" duration="631000" />
+      <workItem from="1661754280274" duration="3059000" />
+      <workItem from="1661757386919" duration="7176000" />
+      <workItem from="1661824127381" duration="1860000" />
+      <workItem from="1661826025334" duration="2767000" />
+      <workItem from="1661909647283" duration="4438000" />
+      <workItem from="1661934545212" duration="934000" />
+      <workItem from="1661935509533" duration="4441000" />
+      <workItem from="1662446783989" duration="1243000" />
+      <workItem from="1662454117864" duration="1136000" />
+      <workItem from="1662455291626" duration="1868000" />
+      <workItem from="1662540052948" duration="2461000" />
+      <workItem from="1662605271308" duration="7073000" />
+      <workItem from="1663317627080" duration="1563000" />
+      <workItem from="1663319291818" duration="518000" />
+      <workItem from="1663326670185" duration="1952000" />
+      <workItem from="1663664741473" duration="71000" />
+      <workItem from="1664159139028" duration="8160000" />
+      <workItem from="1664244035715" duration="4711000" />
+      <workItem from="1664329563301" duration="10507000" />
+      <workItem from="1664441848117" duration="3023000" />
+      <workItem from="1665197924201" duration="11504000" />
+      <workItem from="1665283260434" duration="10704000" />
+      <workItem from="1665365716399" duration="14969000" />
+      <workItem from="1665478823472" duration="5332000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化提交">
+      <created>1665481525706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665481525706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7571000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="初始化提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化提交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.reflect.UndeclaredThrowableException" package="java.lang.reflect" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/java/com/macro/mall/MallAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <marker date="1656382763349" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1656382763349" expanded="false" signature="162:448" ph="..." />
+            <marker date="1656382763349" expanded="true" signature="450:611" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="120" column="67" lean-forward="false" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+          <folding>
+            <marker date="1656382763349" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1656382763349" expanded="false" signature="162:2217" ph="..." />
+            <marker date="1656382763349" expanded="true" signature="3123:3130" ph="{}" />
+            <marker date="1656382763349" expanded="true" signature="3205:3555" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="3606:3617" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="3644:3650" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="3717:3843" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="3979:4838" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="4891:4975" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="5038:5230" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="5310:5727" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="5530:5692" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="5772:5783" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="5820:5826" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="5944:6311" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="6374:6385" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="6422:6428" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="6521:7040" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="7113:7564" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="7668:7965" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="8031:8552" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="8640:8758" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="8859:9461" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="9525:9536" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="9582:9588" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="9676:9778" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="9884:10478" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="10570:10690" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="10745:11431" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="11511:11672" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="11742:11753" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="11777:11783" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="11844:11855" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="11890:11896" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="11944:11955" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="11983:11989" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12046:12057" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12088:12094" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12144:12155" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12179:12185" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12251:12262" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12299:12305" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12361:12372" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12399:12405" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12432:12443" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12461:12467" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="12519:13213" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="12660:12784" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="12883:13014" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="13063:13078" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="13105:13115" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="13159:13174" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="13197:13207" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="13341:17274" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="13799:13810" ph="{}" />
+            <marker date="1656382763349" expanded="false" signature="13875:13890" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="13925:13935" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="13996:14011" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="14042:14052" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="14122:14137" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="14174:14184" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="14300:15158" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="14400:14602" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="15207:16223" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16039:16168" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16298:16550" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16685:16841" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16908:17268" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="17326:19398" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="17574:17725" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="17784:19392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/core/io/support/SpringFactoriesLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="86" column="48" lean-forward="true" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+          <folding>
+            <marker date="1656382769004" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1656382769004" expanded="false" signature="159:1005" ph="..." />
+            <marker date="1656382769004" expanded="true" signature="1378:1385" ph="{}" />
+            <marker date="1656382769004" expanded="true" signature="1488:2423" ph="{...}" />
+            <marker date="1656382769004" expanded="true" signature="2530:2703" ph="{...}" />
+            <marker date="1656382769004" expanded="true" signature="2805:4501" ph="{...}" />
+            <marker date="1656382769004" expanded="true" signature="4628:5375" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/cloud/spring-cloud-alibaba-nacos-config/2.2.0.RELEASE/spring-cloud-alibaba-nacos-config-2.2.0.RELEASE.jar!/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="64" lean-forward="true" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/mall/mapper/CmsHelpCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsHelpCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <marker date="1656382007604" expanded="true" signature="3615:3727" ph="select from cms_help_category" />
+            <marker date="1656382007604" expanded="true" signature="3810:3876" ph="delete from cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="3985:4014" ph="delete from cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="5803:5841" ph="select count... cms_help_category" />
+            <marker date="1656382007604" expanded="true" signature="6843:7163" ph="update cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="7379:7916" ph="update cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="8021:8302" ph="update cms_help_category... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/java/com/macro/mall/MallAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/mall/mapper/CmsHelpCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsHelpCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <marker date="1656382007604" expanded="true" signature="3615:3727" ph="select from cms_help_category" />
+            <marker date="1656382007604" expanded="true" signature="3810:3876" ph="delete from cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="3985:4014" ph="delete from cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="5803:5841" ph="select count... cms_help_category" />
+            <marker date="1656382007604" expanded="true" signature="6843:7163" ph="update cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="7379:7916" ph="update cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="8021:8302" ph="update cms_help_category... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/java/com/macro/mall/MallAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-search/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/mall/mapper/CmsHelpCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsHelpCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <marker date="1656382007604" expanded="true" signature="3615:3727" ph="select from cms_help_category" />
+            <marker date="1656382007604" expanded="true" signature="3810:3876" ph="delete from cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="3985:4014" ph="delete from cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="5803:5841" ph="select count... cms_help_category" />
+            <marker date="1656382007604" expanded="true" signature="6843:7163" ph="update cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="7379:7916" ph="update cms_help_category... " />
+            <marker date="1656382007604" expanded="true" signature="8021:8302" ph="update cms_help_category... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-admin/src/main/java/com/macro/mall/MallAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <marker date="1656382763349" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1656382763349" expanded="false" signature="162:448" ph="..." />
+            <marker date="1656382763349" expanded="true" signature="450:611" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="585" column="14" lean-forward="false" selection-start-line="585" selection-start-column="14" selection-end-line="585" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/cloud/spring-cloud-alibaba-nacos-config/2.2.0.RELEASE/spring-cloud-alibaba-nacos-config-2.2.0.RELEASE.jar!/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/core/io/support/SpringFactoriesLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="86" column="48" lean-forward="false" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+          <folding>
+            <marker date="1656382769004" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1656382769004" expanded="false" signature="159:1005" ph="..." />
+            <marker date="1656382769004" expanded="true" signature="1378:1385" ph="{}" />
+            <marker date="1656382769004" expanded="true" signature="1488:2423" ph="{...}" />
+            <marker date="1656382769004" expanded="true" signature="2530:2703" ph="{...}" />
+            <marker date="1656382769004" expanded="true" signature="2805:4501" ph="{...}" />
+            <marker date="1656382769004" expanded="true" signature="4628:5375" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="120" column="67" lean-forward="false" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+          <folding>
+            <marker date="1656382763349" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1656382763349" expanded="false" signature="162:2217" ph="..." />
+            <marker date="1656382763349" expanded="true" signature="3123:3130" ph="{}" />
+            <marker date="1656382763349" expanded="true" signature="3205:3555" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="3606:3617" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="3644:3650" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="3717:3843" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="3979:4838" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="4891:4975" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="5038:5230" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="5310:5727" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="5530:5692" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="5772:5783" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="5820:5826" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="5944:6311" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="6374:6385" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="6422:6428" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="6521:7040" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="7113:7564" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="7668:7965" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="8031:8552" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="8640:8758" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="8859:9461" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="9525:9536" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="9582:9588" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="9676:9778" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="9884:10478" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="10570:10690" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="10745:11431" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="11511:11672" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="11742:11753" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="11777:11783" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="11844:11855" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="11890:11896" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="11944:11955" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="11983:11989" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12046:12057" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12088:12094" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12144:12155" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12179:12185" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12251:12262" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12299:12305" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12361:12372" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12399:12405" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="12432:12443" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="12461:12467" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="12519:13213" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="12660:12784" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="12883:13014" ph="{...}" />
+            <marker date="1656382763349" expanded="false" signature="13063:13078" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="13105:13115" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="13159:13174" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="13197:13207" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="13341:17274" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="13799:13810" ph="{}" />
+            <marker date="1656382763349" expanded="false" signature="13875:13890" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="13925:13935" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="13996:14011" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="14042:14052" ph=" }" />
+            <marker date="1656382763349" expanded="false" signature="14122:14137" ph=" { " />
+            <marker date="1656382763349" expanded="false" signature="14174:14184" ph=" }" />
+            <marker date="1656382763349" expanded="true" signature="14300:15158" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="14400:14602" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="15207:16223" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16039:16168" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16298:16550" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16685:16841" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="16908:17268" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="17326:19398" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="17574:17725" ph="{...}" />
+            <marker date="1656382763349" expanded="true" signature="17784:19392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mall-swarm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

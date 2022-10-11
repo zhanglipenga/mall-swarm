@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mall-monitor
+  profiles:
+    active: dev
+  security: # 配置登录用户名和密码
+    user:
+      name: macro
+      password: 123456
+  boot:  # 不显示admin-server的监控信息
+    admin:
+      discovery:
+        ignored-services: ${spring.application.name}
+server:
+  port: 8101

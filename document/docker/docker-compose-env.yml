@@ -1,0 +1,100 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root #设置root帐号密码
+    ports:
+      - 3306:3306
+    volumes:
+      - /mydata/mysql/data/db:/var/lib/mysql #数据文件挂载
+      - /mydata/mysql/data/conf:/etc/mysql/conf.d #配置文件挂载
+      - /mydata/mysql/log:/var/log/mysql #日志文件挂载
+  redis:
+    image: redis:7
+    container_name: redis
+    command: redis-server --appendonly yes
+    volumes:
+      - /mydata/redis/data:/data #数据文件挂载
+    ports:
+      - 6379:6379
+  nginx:
+    image: nginx:1.22
+    container_name: nginx
+    volumes:
+      - /mydata/nginx/conf:/etc/nginx #配置文件挂载
+      - /mydata/nginx/html:/usr/share/nginx/html #静态资源根目录挂载
+      - /mydata/nginx/log:/var/log/nginx #日志文件挂载
+    ports:
+      - 80:80
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    container_name: rabbitmq
+    volumes:
+      - /mydata/rabbitmq/data:/var/lib/rabbitmq #数据文件挂载
+      - /mydata/rabbitmq/log:/var/log/rabbitmq #日志文件挂载
+    ports:
+      - 5672:5672
+      - 15672:15672
+  elasticsearch:
+    image: elasticsearch:7.17.3
+    container_name: elasticsearch
+    user: root
+    environment:
+      - "cluster.name=elasticsearch-cluster" #设置集群名称
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m" #设置使用jvm内存大小
+      - #- "discovery.type=single-node" #启动但实例时需要打开，并关闭discovery.seed_hosts和cluster.initial_master_nodes
+      - "discovery.seed_hosts=192.168.244.129"   #其他节点名称
+      - "cluster.initial_master_nodes=192.168.244.129,192.168.244.130"  #可选的master节点
+      - "bootstrap.memory_lock=true"     #锁定物理内存地址，防止es内存被交换出去，也就是避免es使用swap交换分区，频繁的交换，会导致IOPS变高
+    volumes:
+      - /data/elasticsearch/plugins:/usr/share/elasticsearch/plugins #插件文件挂载
+      - /data/elasticsearch/data:/usr/share/elasticsearch/data #数据文件挂载
+      - /data/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml #配置文件挂载
+    ports:
+      - 9200:9200
+      - 9300:9300
+  logstash:
+    image: logstash:7.17.3
+    container_name: logstash
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - /mydata/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf #挂载logstash的配置文件
+    depends_on:
+      - elasticsearch #kibana在elasticsearch启动之后再启动
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    ports:
+      - 4560:4560
+      - 4561:4561
+      - 4562:4562
+      - 4563:4563
+  kibana:
+    image: kibana:7.17.3
+    container_name: kibana
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    depends_on:
+      - elasticsearch #kibana在elasticsearch启动之后再启动
+    environment:
+      - "elasticsearch.hosts=http://es:9200" #设置访问elasticsearch的地址
+    ports:
+      - 5601:5601
+  mongo:
+    image: mongo:4
+    container_name: mongo
+    volumes:
+      - /mydata/mongo/db:/data/db #数据文件挂载
+    ports:
+      - 27017:27017
+  nacos-registry:
+    image: nacos/nacos-server:v2.1.0
+    container_name: nacos-registry
+    environment:
+      - "MODE=standalone"
+    ports:
+      - 8848:8848
