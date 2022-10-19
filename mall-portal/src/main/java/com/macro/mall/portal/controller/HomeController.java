@@ -1,5 +1,7 @@
 package com.macro.mall.portal.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.macro.mall.common.api.CommonResult;
 import com.macro.mall.model.CmsSubject;
 import com.macro.mall.model.PmsProduct;
@@ -22,6 +24,7 @@ import java.util.List;
 @Api(tags = "HomeController", description = "首页内容管理")
 @RequestMapping("/home")
 public class HomeController {
+
     @Autowired
     private HomeService homeService;
 
@@ -61,6 +64,7 @@ public class HomeController {
     }
 
     @ApiOperation("分页获取人气推荐商品")
+    @SentinelResource(value = "hotProduct", blockHandler = "handleException")
     @RequestMapping(value = "/hotProductList", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsProduct>> hotProductList(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
@@ -77,4 +81,10 @@ public class HomeController {
         List<PmsProduct> productList = homeService.newProductList(pageNum,pageSize);
         return CommonResult.success(productList);
     }
+
+    public CommonResult handleException(BlockException exception)
+    {
+        return CommonResult.failed("网络走丢了，请稍后重试");
+    }
+
 }

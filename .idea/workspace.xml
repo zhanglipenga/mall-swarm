@@ -4,11 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7eee458-af62-4814-a6bd-12a050324bcc" name="Default" comment="" />
+    <list default="true" id="a7eee458-af62-4814-a6bd-12a050324bcc" name="Default" comment="初始化提交">
+      <change afterPath="$PROJECT_DIR$/img_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/mall/portal/config/LoadBalancerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/mall-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/mall-admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/mall-auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/mall-auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/mall-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/mall-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/mall-mbg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/mall-mbg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/mall/portal/MallPortalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/mall/portal/MallPortalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-swarm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-swarm.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -19,7 +45,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -50,7 +76,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\apache-maven-3.5.0\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.5.0" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.5.0/repository" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="E:\apache-maven-3.5.0\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -103,18 +129,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Intellij IDEA/mall-swarm",
+    "last_opened_file_path": "E:/Intellij IDEA/mall-swarm/mall-swarm",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5827586",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "4ce4c7704b42dace7d5870b59bec1068",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "4115633887e541e46c45ceb828e63ede",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -189,6 +216,12 @@
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mall-swarm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -318,7 +351,12 @@
       <workItem from="1665197924201" duration="11504000" />
       <workItem from="1665283260434" duration="10704000" />
       <workItem from="1665365716399" duration="14969000" />
-      <workItem from="1665478823472" duration="5332000" />
+      <workItem from="1665478823472" duration="6045000" />
+      <workItem from="1665543778794" duration="3490000" />
+      <workItem from="1665556025391" duration="5547000" />
+      <workItem from="1665563391368" duration="641000" />
+      <workItem from="1666089068788" duration="2626000" />
+      <workItem from="1666160513043" duration="9395000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <created>1665481525706</created>
@@ -327,7 +365,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665481525706</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化提交">
+      <created>1665484520575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665484520575</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改文档">
+      <created>1666090199370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666090199370</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除文件">
+      <created>1666092879305</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666092879305</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -391,7 +450,9 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="初始化提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化提交" />
+    <MESSAGE value="修改文档" />
+    <MESSAGE value="删除文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -67,6 +67,8 @@ rabbitmq:
 feign:
   okhttp:
     enabled: true
+  sentinel:
+    enabled: true
   client:
     config:
       default:

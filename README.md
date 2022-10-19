@@ -181,7 +181,7 @@ docker run -itd --name filebeat  --restart=always -v /var/lib/docker/containers:
 ![img_7.png](img_7.png)
 
   ![img_8.png](img_8.png)
-
+  
 
 - ELK日志收集系统信息，访问地址：http://192.168.244.129:5601
 ![img_13.png](img_13.png)
@@ -202,3 +202,6 @@ docker run -itd --name filebeat  --restart=always -v /var/lib/docker/containers:
 
 - cluster info查看redis集群信息
 ![img_14.png](img_14.png)
+
+- sentinel
+![img_16.png](img_16.png)
