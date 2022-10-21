@@ -6,8 +6,7 @@
 
 ## 系统架构图
 
-![系统架构图](http://img.macrozheng.com/mall/project/mall_micro_service_arch.jpg)
-
+![img_19.png](img_19.png)
 ## 组织结构
 
 ``` lua
