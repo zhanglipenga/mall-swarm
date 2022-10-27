@@ -6,7 +6,7 @@
 
 ## 系统架构图
 
-![img_19.png](img_19.png)
+![img_19](https://user-images.githubusercontent.com/38484718/198181245-5f9a1703-57c2-488d-9e92-0fee02abdaf4.png)
 ## 组织结构
 
 ``` lua
@@ -101,9 +101,9 @@ docker run -itd -p 6378:6378 -p 16378:16378 --name redis-6378 --restart=always  
 
 redis-cli --cluster create 192.168.244.129:6379  192.168.244.129:6378  192.168.244.130:6379  192.168.244.130:6378 192.168.244.131:6379  192.168.244.131:6378 --cluster-replicas 1
 
-![img.png](img.png)
+![img](https://user-images.githubusercontent.com/38484718/198181282-f0c716f5-d3ff-472a-bad0-526cf998b95b.png)
 
-![img_1.png](img_1.png)
+![img_1](https://user-images.githubusercontent.com/38484718/198181306-41d695a6-54b3-4468-bf64-a751ddca504f.png)
 
 ## Elasticsearch集群
 
@@ -148,23 +148,23 @@ docker run -itd --name ES01  -p 9200:9200 -p 9300:9300  --restart=always  -e ES_
 ## ELK
 ### 1.kibana
 ##### 1.1 配置文件
-![img_9.png](img_9.png)
+![img_9](https://user-images.githubusercontent.com/38484718/198181354-dd83db36-f42d-4cee-b375-10aa8957833c.png)
 ##### 1.2 运行容器
 docker run -itd --name kibana -p 5601:5601 --restart=always -v /data/kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml  kibana:7.17.3
 
 ### 2. logstash
 ##### 2.1 配置文件
 logstash.yml
-![img_10.png](img_10.png)
+![img_10](https://user-images.githubusercontent.com/38484718/198181386-453c9b1e-0545-4c10-99cf-4f2993ec2be5.png)
 
 logstash.conf
-![img_11.png](img_11.png)
+![img_11](https://user-images.githubusercontent.com/38484718/198181414-6ffa1d16-c9c0-45ed-b31d-3948db002f51.png)
 ##### 2.2 运行容器
 docker run -itd --name logstash -p 5044:5044 -p 5000:5000  --restart=always -e LS_JAVA_OPTS="-Duser.timezone=GMT+08" -v /etc/timezone:/etc/timezone:ro -v /etc/localtime:/etc/localtime:ro -v /data/filebeat/logs/:/usr/share/logstash/logs/ -v /data/logstash/config/logstash.conf:/usr/share/logstash/config/logstash.conf  -v  /data/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml  -v  /data/logstash/config/jvm.options:/usr/share/logstash/config/jvm.options logstash:7.17.3
 
 ### 3. filebeat
 ##### 3.1 配置文件
-![img_12.png](img_12.png)
+![img_12](https://user-images.githubusercontent.com/38484718/198181430-fde93f6e-e3ec-4ca8-bc64-45646c6f3d61.png)
 
 ##### 3.2 运行容器
 docker run -itd --name filebeat  --restart=always -v /var/lib/docker/containers:/var/lib/docker/containers:ro -v /etc/timezone:/etc/timezone:ro -v /etc/localtime:/etc/localtime:ro -v /data/filebeat/logs/:/var/log/:ro -v /data/filebeat/conf/filebeat.yml:/usr/share/filebeat/filebeat.yml  docker.elastic.co/beats/filebeat:7.17.3
@@ -173,34 +173,35 @@ docker run -itd --name filebeat  --restart=always -v /var/lib/docker/containers:
 ## 运行效果展示
 
 - 查看注册中心注册服务信息，访问地址：http://192.168.244.131:8848/nacos/
-![img_6.png](img_6.png)
+(https://user-images.githubusercontent.com/38484718/198181091-07d1c88b-84bf-4bcf-917b-8c97e789b18c.png)
+
 
 
 - 监控中心应用信息，访问地址：http://127.0.0.1:8101
-![img_7.png](img_7.png)
+![img_7](https://user-images.githubusercontent.com/38484718/198181460-f97bff8e-c497-4504-b594-fa46dc935be4.png)
 
-  ![img_8.png](img_8.png)
+ ![img_8](https://user-images.githubusercontent.com/38484718/198181483-470d8812-07ae-412c-956e-65137da86719.png)
   
 
 - ELK日志收集系统信息，访问地址：http://192.168.244.129:5601
-![img_13.png](img_13.png)
+![img_13](https://user-images.githubusercontent.com/38484718/198181503-29d9dc09-dcd3-4255-ae40-747b18c37aba.png)
 
 - 可视化容器管理，访问地址：http://192.168.244.128:9000
-![img_3.png](img_3.png)
+![img_3](https://user-images.githubusercontent.com/38484718/198181537-65c999cd-dc6f-4be7-b021-ff56fc839958.png)
 
-    ![img_4.png](img_4.png)
+ ![img_4](https://user-images.githubusercontent.com/38484718/198181553-738f11fb-981b-4fa0-8a18-ab44266a97fe.png)
 
 
 - 对象存储，访问地址：http://192.168.244.130:9002
-![img_2.png](img_2.png)
+![img_2](https://user-images.githubusercontent.com/38484718/198181573-043dd9c4-b957-4ec6-afda-3b64b70227a7.png)
 
 
 - Elasticsearch集群，访问地址：es-header
-![img_5.png](img_5.png)
+![img_5](https://user-images.githubusercontent.com/38484718/198181590-554eeed4-0f47-4474-9fce-4b31ec6aee42.png)
 
 
 - cluster info查看redis集群信息
-![img_14.png](img_14.png)
+![img_14](https://user-images.githubusercontent.com/38484718/198181606-0004cfe7-c3a5-4242-9332-885b11ba7f8c.png)
 
 - sentinel
-![img_16.png](img_16.png)
+![img_16](https://user-images.githubusercontent.com/38484718/198181615-55ecb51a-9af5-4a21-b682-04016d0e13b2.png)
