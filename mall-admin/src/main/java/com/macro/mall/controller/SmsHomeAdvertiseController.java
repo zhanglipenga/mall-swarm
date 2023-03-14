@@ -28,8 +28,9 @@ public class SmsHomeAdvertiseController {
     @ResponseBody
     public CommonResult create(@RequestBody SmsHomeAdvertise advertise) {
         int count = advertiseService.create(advertise);
-        if (count > 0)
+        if (count > 0) {
             return CommonResult.success(count);
+        }
         return CommonResult.failed();
     }
 
@@ -38,8 +39,9 @@ public class SmsHomeAdvertiseController {
     @ResponseBody
     public CommonResult delete(@RequestParam("ids") List<Long> ids) {
         int count = advertiseService.delete(ids);
-        if (count > 0)
+        if (count > 0) {
             return CommonResult.success(count);
+        }
         return CommonResult.failed();
     }
 
@@ -48,8 +50,9 @@ public class SmsHomeAdvertiseController {
     @ResponseBody
     public CommonResult updateStatus(@PathVariable Long id, Integer status) {
         int count = advertiseService.updateStatus(id, status);
-        if (count > 0)
+        if (count > 0) {
             return CommonResult.success(count);
+        }
         return CommonResult.failed();
     }
 
@@ -66,8 +69,9 @@ public class SmsHomeAdvertiseController {
     @ResponseBody
     public CommonResult update(@PathVariable Long id, @RequestBody SmsHomeAdvertise advertise) {
         int count = advertiseService.update(id, advertise);
-        if (count > 0)
+        if (count > 0) {
             return CommonResult.success(count);
+        }
         return CommonResult.failed();
     }
 

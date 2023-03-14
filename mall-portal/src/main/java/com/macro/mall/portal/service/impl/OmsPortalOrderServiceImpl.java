@@ -473,7 +473,9 @@ public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {
      * @param useStatus 0->未使用；1->已使用
      */
     private void updateCouponStatus(Long couponId, Long memberId, Integer useStatus) {
-        if (couponId == null) return;
+        if (couponId == null) {
+            return;
+        }
         //查询第一张优惠券
         SmsCouponHistoryExample example = new SmsCouponHistoryExample();
         example.createCriteria().andMemberIdEqualTo(memberId)
