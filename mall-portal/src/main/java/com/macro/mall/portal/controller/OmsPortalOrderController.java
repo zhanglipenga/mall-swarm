@@ -38,7 +38,7 @@ public class OmsPortalOrderController {
     @ApiOperation("根据购物车信息生成订单")
     @RequestMapping(value = "/generateOrder", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult generateOrder(@RequestBody OrderParam orderParam) {
+    public CommonResult generateOrder(@RequestBody OrderParam orderParam) throws NullPointerException{
         Map<String, Object> result = portalOrderService.generateOrder(orderParam);
         return CommonResult.success(result, "下单成功");
     }

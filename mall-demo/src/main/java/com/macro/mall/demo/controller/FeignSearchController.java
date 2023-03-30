@@ -1,7 +1,7 @@
 package com.macro.mall.demo.controller;
 
 import com.macro.mall.common.api.CommonResult;
-import com.macro.mall.demo.service.FeignSearchService;
+import com.macro.mall.demo.fegin.FeignSearchService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

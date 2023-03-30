@@ -14,6 +14,8 @@ import com.macro.mall.portal.dao.PortalOrderItemDao;
 import com.macro.mall.portal.dao.SmsCouponHistoryDao;
 import com.macro.mall.portal.domain.*;
 import com.macro.mall.portal.service.*;
+import io.seata.core.context.RootContext;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -90,8 +92,10 @@ public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {
         return result;
     }
 
+    @GlobalTransactional(rollbackFor = Exception.class)
     @Override
-    public Map<String, Object> generateOrder(OrderParam orderParam) {
+    public Map<String, Object> generateOrder(OrderParam orderParam) throws NullPointerException{
+        System.out.println("XID######"+ RootContext.getXID());
         List<OmsOrderItem> orderItemList = new ArrayList<>();
         //获取购物车及优惠信息
         UmsMember currentMember = memberService.getCurrentMember();
@@ -251,9 +255,11 @@ public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {
         order.setPaymentTime(new Date());
         order.setPayType(payType);
         orderMapper.updateByPrimaryKeySelective(order);
+
         //恢复所有下单商品的锁定库存，扣减真实库存
         OmsOrderDetail orderDetail = portalOrderDao.getDetail(orderId);
         int count = portalOrderDao.updateSkuStock(orderDetail.getOrderItemList());
+
         return count;
     }
 

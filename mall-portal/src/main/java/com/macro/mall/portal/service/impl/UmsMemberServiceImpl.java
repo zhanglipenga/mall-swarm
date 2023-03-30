@@ -134,7 +134,8 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     public UmsMember getCurrentMember() {
         String userStr = request.getHeader(AuthConstant.USER_TOKEN_HEADER);
         if(StrUtil.isEmpty(userStr)){
-            Asserts.fail(ResultCode.UNAUTHORIZED);
+            //Asserts.fail(ResultCode.UNAUTHORIZED);
+            return null;
         }
         UserDto userDto = JSONUtil.toBean(userStr, UserDto.class);
         UmsMember member = memberCacheService.getMember(userDto.getId());

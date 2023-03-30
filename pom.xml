@@ -164,6 +164,7 @@
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
             </dependency>
+
             <!--Mysql数据库驱动-->
             <dependency>
                 <groupId>mysql</groupId>
@@ -180,7 +181,6 @@
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
-                <version>${jjwt.version}</version>
             </dependency>
             <!--JWT(Json Web Token)登录支持-->
             <dependency>
@@ -205,6 +205,31 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${admin-starter-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+                <version>2021.0.1.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.seata</groupId>
+                        <artifactId>seata-spring-boot-starter</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.seata</groupId>
+                        <artifactId>seata-all</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-spring-boot-starter</artifactId>
+                <version>1.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-all</artifactId>
+                <version>1.4.2</version>
             </dependency>
             <!--MinIO JAVA SDK-->
             <dependency>
@@ -261,7 +286,7 @@
                                     <!--定义容器启动命令-->
                                     <entryPoint>["java", "-jar","-Dspring.profiles.active=prod","/${project.build.finalName}.jar"]</entryPoint>
                                     <!--定义维护者-->
-                                    <maintainer>macrozheng</maintainer>
+                                    <maintainer>zhanglipenga</maintainer>
                                 </build>
                             </image>
                         </images>

@@ -1,4 +1,4 @@
-package com.macro.mall.demo.service;
+package com.macro.mall.demo.fegin;
 
 import com.macro.mall.common.api.CommonResult;
 import org.springframework.cloud.openfeign.FeignClient;

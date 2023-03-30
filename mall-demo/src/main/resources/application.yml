@@ -23,3 +23,39 @@ management: #开启SpringBoot Admin的监控
 feign:
   okhttp:
     enabled: true
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
+  service:
+    vgroup-mapping:
+      my_test_tx_group: default
+    grouplist:
+      default: 192.168.244.131:8091
+  config:
+    # support: nacos, consul, apollo, zk, etcd3
+    type: nacos
+    nacos:
+      server-addr: 192.168.244.131:8848
+      namespace: f5e1375d-fdcc-4432-bb13-ce33227d21ba
+      group: SEATA_GROUP
+      data-id: seataServer.properties
+      username: nacos
+      password: nacos
+  registry:
+    # support: nacos, eureka, redis, zk, consul, etcd3, sofa
+    type: nacos
+    nacos:
+      server-addr: 192.168.244.131:8848
+      group: SEATA_GROUP
+      namespace: f5e1375d-fdcc-4432-bb13-ce33227d21ba
+      username: nacos
+      password: nacos
