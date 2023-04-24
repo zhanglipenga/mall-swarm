@@ -43,9 +43,9 @@ public class MinioController {
     public CommonResult upload(@RequestPart("file") MultipartFile file) {
         try {
             //创建一个MinIO的Java客户端
-            MinioClient minioClient =MinioClient.builder()
+            MinioClient minioClient = MinioClient.builder()
                     .endpoint(ENDPOINT)
-                    .credentials(ACCESS_KEY,SECRET_KEY)
+                    .credentials(ACCESS_KEY, SECRET_KEY)
                     .build();
             boolean isExist = minioClient.bucketExists(BucketExistsArgs.builder().bucket(BUCKET_NAME).build());
             if (isExist) {
@@ -88,7 +88,7 @@ public class MinioController {
                 .Effect("Allow")
                 .Principal("*")
                 .Action("s3:GetObject")
-                .Resource("arn:aws:s3:::"+bucketName+"/*.**").build();
+                .Resource("arn:aws:s3:::" + bucketName + "/*.**").build();
         return BucketPolicyConfigDto.builder()
                 .Version("2012-10-17")
                 .Statement(CollUtil.toList(statement))
@@ -102,7 +102,7 @@ public class MinioController {
         try {
             MinioClient minioClient = MinioClient.builder()
                     .endpoint(ENDPOINT)
-                    .credentials(ACCESS_KEY,SECRET_KEY)
+                    .credentials(ACCESS_KEY, SECRET_KEY)
                     .build();
             minioClient.removeObject(RemoveObjectArgs.builder().bucket(BUCKET_NAME).object(objectName).build());
             return CommonResult.success(null);

@@ -27,24 +27,25 @@ public class PmsDaoTests {
     @Autowired
     private PmsProductDao productDao;
     private static final Logger LOGGER = LoggerFactory.getLogger(PmsDaoTests.class);
+
     @Test
     @Transactional
     @Rollback
-    public void testInsertBatch(){
+    public void testInsertBatch() {
         List<PmsMemberPrice> list = new ArrayList<>();
-        for(int i=0;i<5;i++){
+        for (int i = 0; i < 5; i++) {
             PmsMemberPrice memberPrice = new PmsMemberPrice();
             memberPrice.setProductId(1L);
-            memberPrice.setMemberLevelId((long) (i+1));
+            memberPrice.setMemberLevelId((long) (i + 1));
             memberPrice.setMemberPrice(new BigDecimal("22"));
             list.add(memberPrice);
         }
         int count = memberPriceDao.insertList(list);
-        assertEquals(5,count);
+        assertEquals(5, count);
     }
 
     @Test
-    public void  testGetProductUpdateInfo(){
+    public void testGetProductUpdateInfo() {
         PmsProductResult productResult = productDao.getUpdateInfo(7L);
         String json = JSONUtil.parse(productResult).toString();
         LOGGER.info(json);

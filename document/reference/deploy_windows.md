@@ -2,7 +2,9 @@
 
 ## 开发环境搭建
 
-> `mall-swarm`中使用到的环境和`mall`项目中大致相同，具体可以查看[mall在Windows环境下的部署](https://github.com/macrozheng/mall-learning/blob/master/docs/deploy/mall_deploy_windows.md)。
+> `mall-swarm`中使用到的环境和`mall`
+> 项目中大致相同，具体可以查看[mall在Windows环境下的部署](https://github.com/macrozheng/mall-learning/blob/master/docs/deploy/mall_deploy_windows.md)
+> 。
 
 简易环境搭建流程：
 

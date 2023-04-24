@@ -13,5 +13,5 @@ public interface PmsProductAttributeValueDao {
     /**
      * 批量创建
      */
-    int insertList(@Param("list")List<PmsProductAttributeValue> productAttributeValueList);
+    int insertList(@Param("list") List<PmsProductAttributeValue> productAttributeValueList);
 }

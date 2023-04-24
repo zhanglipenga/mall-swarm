@@ -72,7 +72,7 @@ public class ConfirmOrderResult {
         this.calcAmount = calcAmount;
     }
 
-    public static class CalcAmount{
+    public static class CalcAmount {
         //订单商品总金额
         private BigDecimal totalAmount;
         //运费

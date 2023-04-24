@@ -4,13 +4,13 @@
 
 ### 后端技术
 
-技术 | 名称 
+技术 | 名称
 ----|----
 Spring Boot | 容器+MVC框架
 Spring Security | 认证和授权框架
-MyBatis | ORM框架  
-MyBatisGenerator | 数据层代码生成  
-PageHelper | MyBatis物理分页插件  
+MyBatis | ORM框架
+MyBatisGenerator | 数据层代码生成
+PageHelper | MyBatis物理分页插件
 Swagger-UI | 文档生产工具
 Hibernator-Validator | 验证框架
 Elasticsearch | 搜索引擎
@@ -22,7 +22,7 @@ Druid | 数据库连接池
 
 ### 前端技术
 
-技术 | 名称 
+技术 | 名称
 ----|----
 Vue | 前端框架
 Vue-router | 路由框架
@@ -33,7 +33,7 @@ Js-cookie | cookie管理工具
 
 ### 框架搭建
 
-功能 | 完成 
+功能 | 完成
 ----|----
 集成MyBatis | ✔
 集成MyBatisGenerator | ✔
@@ -66,7 +66,7 @@ SpringSecurity权限管理功能 | ✔
 
 ### 使用工具
 
-工具 | 下载地址 
+工具 | 下载地址
 ----|----
 开发工具idea | https://www.jetbrains.com/idea/download
 redis客户端连接工具 | https://redisdesktop.com/download
@@ -278,7 +278,7 @@ gif录制工具 | https://www.screentogif.com/
 - 角色管理：添加角色、删除角色、更新角色、角色列表、获取相应角色权限、修改相应角色权限
 - 成员管理：添加、编辑、删除成员、成员列表、为成员分配角色、获取成员角色、分配+-权限、获取权限列表
 
-角色 | 菜单 
+角色 | 菜单
 ----|----
 管理员 | 所有菜单权限
 运营 | 首页、用户、促销、运营、内容
@@ -308,13 +308,13 @@ gif录制工具 | https://www.screentogif.com/
 
 - 根据用户搜索记录聚合生成热搜词
 
-> **商品搜索联想功能** 
+> **商品搜索联想功能**
 
 - 根据用户搜索记录聚合生成热搜词
 
 #### 购物流程 ✔
 
-> **购物车** 
+> **购物车**
 
 - 添加商品到购物车
 - 购物车商品列表（商品主图、商品名称、商品数量、商品规格）
@@ -322,7 +322,7 @@ gif录制工具 | https://www.screentogif.com/
 - 购物车中商品重选规格
 - 购物车中商品删除功能
 
-> **生成确认单** 
+> **生成确认单**
 
 - 生成确认单信息：收货信息、商品信息、价格信息、发票信息、支付方式
 - 选择收货地址：默认收货地址
@@ -331,7 +331,7 @@ gif录制工具 | https://www.screentogif.com/
 - 选择支付方式：在线支付及货到付款
 - 计算应付金额：合计+运费-优惠券抵扣-积分抵扣-活动优惠
 
-> **提交订单** 
+> **提交订单**
 
 - 将确认单信息转化为订单
 - 删除购物车中相关商品

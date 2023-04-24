@@ -42,9 +42,10 @@ public interface SmsFlashPromotionProductRelationService {
 
     /**
      * 根据活动和场次id获取商品关系数量
+     *
      * @param flashPromotionId
      * @param flashPromotionSessionId
      * @return
      */
-    long getCount(Long flashPromotionId,Long flashPromotionSessionId);
+    long getCount(Long flashPromotionId, Long flashPromotionSessionId);
 }

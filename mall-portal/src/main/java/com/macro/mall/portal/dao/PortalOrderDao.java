@@ -23,6 +23,7 @@ public interface PortalOrderDao {
 
     /**
      * 获取超时订单
+     *
      * @param minute 超时时间（分）
      */
     List<OmsOrderDetail> getTimeOutOrders(@Param("minute") Integer minute);
@@ -30,7 +31,7 @@ public interface PortalOrderDao {
     /**
      * 批量修改订单状态
      */
-    int updateOrderStatus(@Param("ids") List<Long> ids,@Param("status") Integer status);
+    int updateOrderStatus(@Param("ids") List<Long> ids, @Param("status") Integer status);
 
     /**
      * 解除取消订单的库存锁定

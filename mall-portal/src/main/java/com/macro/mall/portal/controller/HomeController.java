@@ -59,7 +59,7 @@ public class HomeController {
     public CommonResult<List<CmsSubject>> getSubjectList(@RequestParam(required = false) Long cateId,
                                                          @RequestParam(value = "pageSize", defaultValue = "4") Integer pageSize,
                                                          @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
-        List<CmsSubject> subjectList = homeService.getSubjectList(cateId,pageSize,pageNum);
+        List<CmsSubject> subjectList = homeService.getSubjectList(cateId, pageSize, pageNum);
         return CommonResult.success(subjectList);
     }
 
@@ -69,7 +69,7 @@ public class HomeController {
     @ResponseBody
     public CommonResult<List<PmsProduct>> hotProductList(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                                          @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize) {
-        List<PmsProduct> productList = homeService.hotProductList(pageNum,pageSize);
+        List<PmsProduct> productList = homeService.hotProductList(pageNum, pageSize);
         return CommonResult.success(productList);
     }
 
@@ -78,12 +78,11 @@ public class HomeController {
     @ResponseBody
     public CommonResult<List<PmsProduct>> newProductList(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                                          @RequestParam(value = "pageSize", defaultValue = "6") Integer pageSize) {
-        List<PmsProduct> productList = homeService.newProductList(pageNum,pageSize);
+        List<PmsProduct> productList = homeService.newProductList(pageNum, pageSize);
         return CommonResult.success(productList);
     }
 
-    public CommonResult handleException(BlockException exception)
-    {
+    public CommonResult handleException(BlockException exception) {
         return CommonResult.failed("网络走丢了，请稍后重试");
     }
 

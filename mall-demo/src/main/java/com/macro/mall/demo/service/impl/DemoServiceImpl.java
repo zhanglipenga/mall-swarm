@@ -47,7 +47,7 @@ public class DemoServiceImpl implements DemoService {
     public int createBrand(PmsBrandDto pmsBrandDto) {
 
         PmsBrand pmsBrand = new PmsBrand();
-        BeanUtils.copyProperties(pmsBrandDto,pmsBrand);
+        BeanUtils.copyProperties(pmsBrandDto, pmsBrand);
         brandMapper.insertSelective(pmsBrand);
 
         OrderParam orderParam = new OrderParam();
@@ -59,7 +59,7 @@ public class DemoServiceImpl implements DemoService {
         orderParam.setCouponId(1L);
         orderParam.setUseIntegration(1);
         orderParam.setMemberReceiveAddressId(1L);
-        System.out.println("XID######"+ RootContext.getXID());
+        System.out.println("XID######" + RootContext.getXID());
         portalService.generateOrder(orderParam);
 
 //        String url = "http://localhost:8085/order/generateOrder";
@@ -78,7 +78,7 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public int updateBrand(Long id, PmsBrandDto pmsBrandDto) {
         PmsBrand pmsBrand = new PmsBrand();
-        BeanUtils.copyProperties(pmsBrandDto,pmsBrand);
+        BeanUtils.copyProperties(pmsBrandDto, pmsBrand);
         pmsBrand.setId(id);
         return brandMapper.updateByPrimaryKeySelective(pmsBrand);
     }

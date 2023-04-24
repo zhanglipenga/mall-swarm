@@ -24,14 +24,15 @@ import java.util.List;
 public class MemberAttentionController {
     @Autowired
     private MemberAttentionService memberAttentionService;
+
     @ApiOperation("添加品牌关注")
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult add(@RequestBody MemberBrandAttention memberBrandAttention) {
         int count = memberAttentionService.add(memberBrandAttention);
-        if(count>0){
+        if (count > 0) {
             return CommonResult.success(count);
-        }else{
+        } else {
             return CommonResult.failed();
         }
     }
@@ -41,9 +42,9 @@ public class MemberAttentionController {
     @ResponseBody
     public CommonResult delete(Long brandId) {
         int count = memberAttentionService.delete(brandId);
-        if(count>0){
+        if (count > 0) {
             return CommonResult.success(count);
-        }else{
+        } else {
             return CommonResult.failed();
         }
     }
@@ -53,7 +54,7 @@ public class MemberAttentionController {
     @ResponseBody
     public CommonResult<CommonPage<MemberBrandAttention>> list(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                                                @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize) {
-        Page<MemberBrandAttention> page = memberAttentionService.list(pageNum,pageSize);
+        Page<MemberBrandAttention> page = memberAttentionService.list(pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(page));
     }
 

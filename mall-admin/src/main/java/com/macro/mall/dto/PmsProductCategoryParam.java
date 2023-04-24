@@ -19,14 +19,14 @@ public class PmsProductCategoryParam {
     @ApiModelProperty("父分类的编号")
     private Long parentId;
     @NotEmpty
-    @ApiModelProperty(value = "商品分类名称",required = true)
+    @ApiModelProperty(value = "商品分类名称", required = true)
     private String name;
     @ApiModelProperty("分类单位")
     private String productUnit;
-    @FlagValidator(value = {"0","1"},message = "状态只能为0或1")
+    @FlagValidator(value = {"0", "1"}, message = "状态只能为0或1")
     @ApiModelProperty("是否在导航栏显示")
     private Integer navStatus;
-    @FlagValidator(value = {"0","1"},message = "状态只能为0或1")
+    @FlagValidator(value = {"0", "1"}, message = "状态只能为0或1")
     @ApiModelProperty("是否进行显示")
     private Integer showStatus;
     @Min(value = 0)

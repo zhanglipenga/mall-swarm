@@ -17,7 +17,7 @@ public class ResourceRoleRulesHolder {
     private UmsResourceService resourceService;
 
     @PostConstruct
-    public void initResourceRolesMap(){
+    public void initResourceRolesMap() {
         resourceService.initResourceRolesMap();
     }
 }

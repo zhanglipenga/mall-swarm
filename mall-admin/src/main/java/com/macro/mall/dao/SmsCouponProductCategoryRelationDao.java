@@ -13,5 +13,5 @@ public interface SmsCouponProductCategoryRelationDao {
     /**
      * 批量创建
      */
-    int insertList(@Param("list")List<SmsCouponProductCategoryRelation> productCategoryRelationList);
+    int insertList(@Param("list") List<SmsCouponProductCategoryRelation> productCategoryRelationList);
 }

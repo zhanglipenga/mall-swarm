@@ -13,5 +13,6 @@ import java.util.List;
  */
 public interface SmsCouponHistoryDao {
     List<SmsCouponHistoryDetail> getDetailList(@Param("memberId") Long memberId);
-    List<SmsCoupon> getCouponList(@Param("memberId") Long memberId, @Param("useStatus")Integer useStatus);
+
+    List<SmsCoupon> getCouponList(@Param("memberId") Long memberId, @Param("useStatus") Integer useStatus);
 }

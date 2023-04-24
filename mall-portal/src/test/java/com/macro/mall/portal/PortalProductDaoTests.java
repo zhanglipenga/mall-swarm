@@ -20,14 +20,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PortalProductDaoTests {
     @Autowired
     private PortalProductDao portalProductDao;
+
     @Test
-    public void testGetPromotionProductList(){
+    public void testGetPromotionProductList() {
         List<Long> ids = new ArrayList<>();
         ids.add(26L);
         ids.add(27L);
         ids.add(28L);
         ids.add(29L);
         List<PromotionProduct> promotionProductList = portalProductDao.getPromotionProductList(ids);
-        assertEquals(4,promotionProductList.size());
+        assertEquals(4, promotionProductList.size());
     }
 }

@@ -43,22 +43,22 @@ public class HomeServiceImpl implements HomeService {
         //获取首页广告
         result.setAdvertiseList(getHomeAdvertiseList());
         //获取推荐品牌
-        result.setBrandList(homeDao.getRecommendBrandList(0,6));
+        result.setBrandList(homeDao.getRecommendBrandList(0, 6));
         //获取秒杀信息
         result.setHomeFlashPromotion(getHomeFlashPromotion());
         //获取新品推荐
-        result.setNewProductList(homeDao.getNewProductList(0,4));
+        result.setNewProductList(homeDao.getNewProductList(0, 4));
         //获取人气推荐
-        result.setHotProductList(homeDao.getHotProductList(0,4));
+        result.setHotProductList(homeDao.getHotProductList(0, 4));
         //获取推荐专题
-        result.setSubjectList(homeDao.getRecommendSubjectList(0,4));
+        result.setSubjectList(homeDao.getRecommendSubjectList(0, 4));
         return result;
     }
 
     @Override
     public List<PmsProduct> recommendProductList(Integer pageSize, Integer pageNum) {
         // TODO: 2019/1/29 暂时默认推荐所有商品
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         PmsProductExample example = new PmsProductExample();
         example.createCriteria()
                 .andDeleteStatusEqualTo(0)
@@ -78,11 +78,11 @@ public class HomeServiceImpl implements HomeService {
 
     @Override
     public List<CmsSubject> getSubjectList(Long cateId, Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         CmsSubjectExample example = new CmsSubjectExample();
         CmsSubjectExample.Criteria criteria = example.createCriteria();
         criteria.andShowStatusEqualTo(1);
-        if(cateId!=null){
+        if (cateId != null) {
             criteria.andCategoryIdEqualTo(cateId);
         }
         return subjectMapper.selectByExample(example);
@@ -113,7 +113,7 @@ public class HomeServiceImpl implements HomeService {
                 homeFlashPromotion.setEndTime(flashPromotionSession.getEndTime());
                 //获取下一个秒杀场次
                 SmsFlashPromotionSession nextSession = getNextFlashPromotionSession(homeFlashPromotion.getStartTime());
-                if(nextSession!=null){
+                if (nextSession != null) {
                     homeFlashPromotion.setNextStartTime(nextSession.getStartTime());
                     homeFlashPromotion.setNextEndTime(nextSession.getEndTime());
                 }

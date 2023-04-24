@@ -53,7 +53,7 @@ public class MemberProductCollectionController {
     @ResponseBody
     public CommonResult<CommonPage<MemberProductCollection>> list(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                                                   @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize) {
-        Page<MemberProductCollection> page = memberCollectionService.list(pageNum,pageSize);
+        Page<MemberProductCollection> page = memberCollectionService.list(pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(page));
     }
 

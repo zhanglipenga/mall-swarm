@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.macro.mall.dao.OmsOrderReturnApplyDao">
-    <resultMap id="returnApplyDetailResultMap" type="com.macro.mall.dto.OmsOrderReturnApplyResult" extends="com.macro.mall.mapper.OmsOrderReturnApplyMapper.BaseResultMap">
-        <association property="companyAddress" resultMap="com.macro.mall.mapper.OmsCompanyAddressMapper.BaseResultMap" columnPrefix="ca_"/>
+    <resultMap id="returnApplyDetailResultMap" type="com.macro.mall.dto.OmsOrderReturnApplyResult"
+               extends="com.macro.mall.mapper.OmsOrderReturnApplyMapper.BaseResultMap">
+        <association property="companyAddress" resultMap="com.macro.mall.mapper.OmsCompanyAddressMapper.BaseResultMap"
+                     columnPrefix="ca_"/>
     </resultMap>
     <select id="getList" resultMap="com.macro.mall.mapper.OmsOrderReturnApplyMapper.BaseResultMap">
         SELECT
@@ -42,18 +44,17 @@
         </if>
     </select>
     <select id="getDetail" resultMap="returnApplyDetailResultMap">
-        SELECT
-            ra.*, ca.id ca_id,
-                  ca.address_name ca_address_name,
-                  ca.`name` ca_name,
-                  ca.phone ca_phone,
-                  ca.province ca_province,
-                  ca.city ca_city,
-                  ca.region ca_region,
-                  ca.detail_address ca_detail_address
-        FROM
-            oms_order_return_apply ra
-            LEFT JOIN oms_company_address ca ON ra.company_address_id = ca.id
-        WHERE ra.id=#{id};
+        SELECT ra.*,
+               ca.id             ca_id,
+               ca.address_name   ca_address_name,
+               ca.`name`         ca_name,
+               ca.phone          ca_phone,
+               ca.province       ca_province,
+               ca.city           ca_city,
+               ca.region         ca_region,
+               ca.detail_address ca_detail_address
+        FROM oms_order_return_apply ra
+                 LEFT JOIN oms_company_address ca ON ra.company_address_id = ca.id
+        WHERE ra.id = #{id};
     </select>
 </mapper>

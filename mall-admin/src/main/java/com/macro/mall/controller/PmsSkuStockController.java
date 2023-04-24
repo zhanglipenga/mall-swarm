@@ -25,18 +25,19 @@ public class PmsSkuStockController {
     @ApiOperation("根据商品编号及编号模糊搜索sku库存")
     @RequestMapping(value = "/{pid}", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult<List<PmsSkuStock>> getList(@PathVariable Long pid, @RequestParam(value = "keyword",required = false) String keyword) {
+    public CommonResult<List<PmsSkuStock>> getList(@PathVariable Long pid, @RequestParam(value = "keyword", required = false) String keyword) {
         List<PmsSkuStock> skuStockList = skuStockService.getList(pid, keyword);
         return CommonResult.success(skuStockList);
     }
+
     @ApiOperation("批量更新库存信息")
-    @RequestMapping(value ="/update/{pid}",method = RequestMethod.POST)
+    @RequestMapping(value = "/update/{pid}", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult update(@PathVariable Long pid,@RequestBody List<PmsSkuStock> skuStockList){
-        int count = skuStockService.update(pid,skuStockList);
-        if(count>0){
+    public CommonResult update(@PathVariable Long pid, @RequestBody List<PmsSkuStock> skuStockList) {
+        int count = skuStockService.update(pid, skuStockList);
+        if (count > 0) {
             return CommonResult.success(count);
-        }else{
+        } else {
             return CommonResult.failed();
         }
     }

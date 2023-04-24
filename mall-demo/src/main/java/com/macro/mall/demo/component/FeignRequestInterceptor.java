@@ -28,10 +28,10 @@ public class FeignRequestInterceptor implements RequestInterceptor {
                     String name = headerNames.nextElement();
                     String values = request.getHeader(name);
                     //请求头的值为JSON格式时有截断问题
-                    if("user".equals(name)&&StrUtil.isNotEmpty(values)){
+                    if ("user".equals(name) && StrUtil.isNotEmpty(values)) {
                         JSONObject jsonObject = JSONUtil.parseObj(values);
                         String id = jsonObject.getStr("id");
-                        values = JSONUtil.createObj().putOnce("id",id).toString();
+                        values = JSONUtil.createObj().putOnce("id", id).toString();
                     }
                     requestTemplate.header(name, values);
                 }

@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class PmsProductParam extends PmsProduct{
+public class PmsProductParam extends PmsProduct {
     @ApiModelProperty("商品阶梯价格设置")
     private List<PmsProductLadder> productLadderList;
     @ApiModelProperty("商品满减价格设置")

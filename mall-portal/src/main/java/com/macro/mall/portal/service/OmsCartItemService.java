@@ -36,10 +36,10 @@ public interface OmsCartItemService {
     /**
      * 批量删除购物车中的商品
      */
-    int delete(Long memberId,List<Long> ids);
+    int delete(Long memberId, List<Long> ids);
 
     /**
-     *获取购物车中用于选择商品规格的商品信息
+     * 获取购物车中用于选择商品规格的商品信息
      */
     CartProduct getCartProduct(Long productId);
 

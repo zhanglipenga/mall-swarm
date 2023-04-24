@@ -36,12 +36,12 @@ public class UserServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         String clientId = request.getParameter("client_id");
         UserDto userDto;
-        if(AuthConstant.ADMIN_CLIENT_ID.equals(clientId)){
+        if (AuthConstant.ADMIN_CLIENT_ID.equals(clientId)) {
             userDto = adminService.loadUserByUsername(username);
-        }else{
+        } else {
             userDto = memberService.loadUserByUsername(username);
         }
-        if (userDto==null) {
+        if (userDto == null) {
             throw new UsernameNotFoundException(MessageConstant.USERNAME_PASSWORD_ERROR);
         }
         userDto.setClientId(clientId);

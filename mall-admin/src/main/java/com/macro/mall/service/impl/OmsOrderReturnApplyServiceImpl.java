@@ -25,9 +25,10 @@ public class OmsOrderReturnApplyServiceImpl implements OmsOrderReturnApplyServic
     private OmsOrderReturnApplyDao returnApplyDao;
     @Autowired
     private OmsOrderReturnApplyMapper returnApplyMapper;
+
     @Override
     public List<OmsOrderReturnApply> list(OmsReturnApplyQueryParam queryParam, Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         return returnApplyDao.getList(queryParam);
     }
 
@@ -42,7 +43,7 @@ public class OmsOrderReturnApplyServiceImpl implements OmsOrderReturnApplyServic
     public int updateStatus(Long id, OmsUpdateStatusParam statusParam) {
         Integer status = statusParam.getStatus();
         OmsOrderReturnApply returnApply = new OmsOrderReturnApply();
-        if(status.equals(1)){
+        if (status.equals(1)) {
             //确认退货
             returnApply.setId(id);
             returnApply.setStatus(1);
@@ -51,21 +52,21 @@ public class OmsOrderReturnApplyServiceImpl implements OmsOrderReturnApplyServic
             returnApply.setHandleTime(new Date());
             returnApply.setHandleMan(statusParam.getHandleMan());
             returnApply.setHandleNote(statusParam.getHandleNote());
-        }else if(status.equals(2)){
+        } else if (status.equals(2)) {
             //完成退货
             returnApply.setId(id);
             returnApply.setStatus(2);
             returnApply.setReceiveTime(new Date());
             returnApply.setReceiveMan(statusParam.getReceiveMan());
             returnApply.setReceiveNote(statusParam.getReceiveNote());
-        }else if(status.equals(3)){
+        } else if (status.equals(3)) {
             //拒绝退货
             returnApply.setId(id);
             returnApply.setStatus(3);
             returnApply.setHandleTime(new Date());
             returnApply.setHandleMan(statusParam.getHandleMan());
             returnApply.setHandleNote(statusParam.getHandleNote());
-        }else{
+        } else {
             return 0;
         }
         return returnApplyMapper.updateByPrimaryKeySelective(returnApply);

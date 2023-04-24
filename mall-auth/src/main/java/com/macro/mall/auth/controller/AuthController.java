@@ -38,12 +38,12 @@ public class AuthController {
                                                         @ApiParam("登录用户名") @RequestParam(required = false) String username,
                                                         @ApiParam("登录密码") @RequestParam(required = false) String password) throws HttpRequestMethodNotSupportedException {
         Map<String, String> parameters = new HashMap<>();
-        parameters.put("grant_type",grant_type);
-        parameters.put("client_id",client_id);
-        parameters.put("client_secret",client_secret);
-        parameters.putIfAbsent("refresh_token",refresh_token);
-        parameters.putIfAbsent("username",username);
-        parameters.putIfAbsent("password",password);
+        parameters.put("grant_type", grant_type);
+        parameters.put("client_id", client_id);
+        parameters.put("client_secret", client_secret);
+        parameters.putIfAbsent("refresh_token", refresh_token);
+        parameters.putIfAbsent("username", username);
+        parameters.putIfAbsent("password", password);
         OAuth2AccessToken oAuth2AccessToken = tokenEndpoint.postAccessToken(request.getUserPrincipal(), parameters).getBody();
         Oauth2TokenDto oauth2TokenDto = Oauth2TokenDto.builder()
                 .token(oAuth2AccessToken.getValue())

@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD,ElementType.PARAMETER})
+@Target({ElementType.FIELD, ElementType.PARAMETER})
 @Constraint(validatedBy = FlagValidatorClass.class)
 public @interface FlagValidator {
     String[] value() default {};

@@ -40,7 +40,7 @@ public class PortalBrandServiceImpl implements PortalBrandService {
 
     @Override
     public CommonPage<PmsProduct> productList(Long brandId, Integer pageNum, Integer pageSize) {
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         PmsProductExample example = new PmsProductExample();
         example.createCriteria().andDeleteStatusEqualTo(0)
                 .andBrandIdEqualTo(brandId);

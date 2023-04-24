@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Getter
 @Setter
-public class PmsPortalProductDetail{
+public class PmsPortalProductDetail {
     @ApiModelProperty("商品信息")
     private PmsProduct product;
     @ApiModelProperty("商品品牌")

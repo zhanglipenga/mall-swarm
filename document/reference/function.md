@@ -22,6 +22,6 @@
 
 ![功能结构图-用户.jpg](https://github.com/macrozheng/mall/blob/master/document/resource/mind_member.jpg)
 
-## 前台商城系统 
+## 前台商城系统
 
 ![功能结构图-前台.jpg](https://github.com/macrozheng/mall/blob/master/document/resource/mind_portal.jpg)

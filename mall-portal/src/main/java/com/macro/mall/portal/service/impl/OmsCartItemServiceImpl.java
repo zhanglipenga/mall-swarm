@@ -38,7 +38,7 @@ public class OmsCartItemServiceImpl implements OmsCartItemService {
     @Override
     public int add(OmsCartItem cartItem) {
         int count;
-        UmsMember currentMember =memberService.getCurrentMember();
+        UmsMember currentMember = memberService.getCurrentMember();
         cartItem.setMemberId(currentMember.getId());
         cartItem.setMemberNickname(currentMember.getNickname());
         cartItem.setDeleteStatus(0);
@@ -61,7 +61,7 @@ public class OmsCartItemServiceImpl implements OmsCartItemService {
         OmsCartItemExample example = new OmsCartItemExample();
         OmsCartItemExample.Criteria criteria = example.createCriteria().andMemberIdEqualTo(cartItem.getMemberId())
                 .andProductIdEqualTo(cartItem.getProductId()).andDeleteStatusEqualTo(0);
-        if (cartItem.getProductSkuId()!=null) {
+        if (cartItem.getProductSkuId() != null) {
             criteria.andProductSkuIdEqualTo(cartItem.getProductSkuId());
         }
         List<OmsCartItem> cartItemList = cartItemMapper.selectByExample(example);
@@ -81,11 +81,11 @@ public class OmsCartItemServiceImpl implements OmsCartItemService {
     @Override
     public List<CartPromotionItem> listPromotion(Long memberId, List<Long> cartIds) {
         List<OmsCartItem> cartItemList = list(memberId);
-        if(CollUtil.isNotEmpty(cartIds)){
-            cartItemList = cartItemList.stream().filter(item->cartIds.contains(item.getId())).collect(Collectors.toList());
+        if (CollUtil.isNotEmpty(cartIds)) {
+            cartItemList = cartItemList.stream().filter(item -> cartIds.contains(item.getId())).collect(Collectors.toList());
         }
         List<CartPromotionItem> cartPromotionItemList = new ArrayList<>();
-        if(!CollectionUtils.isEmpty(cartItemList)){
+        if (!CollectionUtils.isEmpty(cartItemList)) {
             cartPromotionItemList = promotionService.calcCartPromotion(cartItemList);
         }
         return cartPromotionItemList;
@@ -134,6 +134,6 @@ public class OmsCartItemServiceImpl implements OmsCartItemService {
         record.setDeleteStatus(1);
         OmsCartItemExample example = new OmsCartItemExample();
         example.createCriteria().andMemberIdEqualTo(memberId);
-        return cartItemMapper.updateByExampleSelective(record,example);
+        return cartItemMapper.updateByExampleSelective(record, example);
     }
 }

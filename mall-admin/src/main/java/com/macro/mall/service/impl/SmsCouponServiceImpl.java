@@ -34,6 +34,7 @@ public class SmsCouponServiceImpl implements SmsCouponService {
     private SmsCouponProductCategoryRelationDao productCategoryRelationDao;
     @Autowired
     private SmsCouponDao couponDao;
+
     @Override
     public int create(SmsCouponParam couponParam) {
         couponParam.setCount(couponParam.getPublishCount());
@@ -42,14 +43,14 @@ public class SmsCouponServiceImpl implements SmsCouponService {
         //插入优惠券表
         int count = couponMapper.insert(couponParam);
         //插入优惠券和商品关系表
-        if(couponParam.getUseType().equals(2)){
-            for(SmsCouponProductRelation productRelation:couponParam.getProductRelationList()){
+        if (couponParam.getUseType().equals(2)) {
+            for (SmsCouponProductRelation productRelation : couponParam.getProductRelationList()) {
                 productRelation.setCouponId(couponParam.getId());
             }
             productRelationDao.insertList(couponParam.getProductRelationList());
         }
         //插入优惠券和商品分类关系表
-        if(couponParam.getUseType().equals(1)){
+        if (couponParam.getUseType().equals(1)) {
             for (SmsCouponProductCategoryRelation couponProductCategoryRelation : couponParam.getProductCategoryRelationList()) {
                 couponProductCategoryRelation.setCouponId(couponParam.getId());
             }
@@ -84,17 +85,17 @@ public class SmsCouponServiceImpl implements SmsCouponService {
     @Override
     public int update(Long id, SmsCouponParam couponParam) {
         couponParam.setId(id);
-        int count =couponMapper.updateByPrimaryKey(couponParam);
+        int count = couponMapper.updateByPrimaryKey(couponParam);
         //删除后插入优惠券和商品关系表
-        if(couponParam.getUseType().equals(2)){
-            for(SmsCouponProductRelation productRelation:couponParam.getProductRelationList()){
+        if (couponParam.getUseType().equals(2)) {
+            for (SmsCouponProductRelation productRelation : couponParam.getProductRelationList()) {
                 productRelation.setCouponId(couponParam.getId());
             }
             deleteProductRelation(id);
             productRelationDao.insertList(couponParam.getProductRelationList());
         }
         //删除后插入优惠券和商品分类关系表
-        if(couponParam.getUseType().equals(1)){
+        if (couponParam.getUseType().equals(1)) {
             for (SmsCouponProductCategoryRelation couponProductCategoryRelation : couponParam.getProductCategoryRelationList()) {
                 couponProductCategoryRelation.setCouponId(couponParam.getId());
             }
@@ -108,13 +109,13 @@ public class SmsCouponServiceImpl implements SmsCouponService {
     public List<SmsCoupon> list(String name, Integer type, Integer pageSize, Integer pageNum) {
         SmsCouponExample example = new SmsCouponExample();
         SmsCouponExample.Criteria criteria = example.createCriteria();
-        if(!StringUtils.isEmpty(name)){
-            criteria.andNameLike("%"+name+"%");
+        if (!StringUtils.isEmpty(name)) {
+            criteria.andNameLike("%" + name + "%");
         }
-        if(type!=null){
+        if (type != null) {
             criteria.andTypeEqualTo(type);
         }
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         return couponMapper.selectByExample(example);
     }
 

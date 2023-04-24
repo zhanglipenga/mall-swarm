@@ -17,8 +17,8 @@ public class FeignPortalFactory implements FallbackFactory<FeignPortalService> {
         try {
             GlobalTransactionContext.reload(RootContext.getXID()).rollback();
         } catch (TransactionException e) {
-            log.error("分布式事物回滚失败:{}",e);
-            log.error("调用fegin接口失败:{}",cause);
+            log.error("分布式事物回滚失败:{}", e);
+            log.error("调用fegin接口失败:{}", cause);
         }
         return null;
     }

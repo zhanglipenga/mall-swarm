@@ -20,5 +20,5 @@ public interface OmsOrderReturnApplyDao {
     /**
      * 获取申请详情
      */
-    OmsOrderReturnApplyResult getDetail(@Param("id")Long id);
+    OmsOrderReturnApplyResult getDetail(@Param("id") Long id);
 }

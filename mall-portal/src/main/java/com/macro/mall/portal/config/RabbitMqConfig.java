@@ -58,7 +58,7 @@ public class RabbitMqConfig {
      * 将订单队列绑定到交换机
      */
     @Bean
-    Binding orderBinding(DirectExchange orderDirect,Queue orderQueue){
+    Binding orderBinding(DirectExchange orderDirect, Queue orderQueue) {
         return BindingBuilder
                 .bind(orderQueue)
                 .to(orderDirect)
@@ -69,7 +69,7 @@ public class RabbitMqConfig {
      * 将订单延迟队列绑定到交换机
      */
     @Bean
-    Binding orderTtlBinding(DirectExchange orderTtlDirect,Queue orderTtlQueue){
+    Binding orderTtlBinding(DirectExchange orderTtlDirect, Queue orderTtlQueue) {
         return BindingBuilder
                 .bind(orderTtlQueue)
                 .to(orderTtlDirect)

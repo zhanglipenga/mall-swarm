@@ -36,6 +36,7 @@ public interface SmsCouponService {
 
     /**
      * 获取优惠券详情
+     *
      * @param id 优惠券表id
      */
     SmsCouponParam getItem(Long id);

@@ -88,17 +88,17 @@ public class UmsAdminServiceImpl implements UmsAdminService {
 
     @Override
     public CommonResult login(String username, String password) {
-        if(StrUtil.isEmpty(username)||StrUtil.isEmpty(password)){
+        if (StrUtil.isEmpty(username) || StrUtil.isEmpty(password)) {
             Asserts.fail("用户名或密码不能为空！");
         }
         Map<String, String> params = new HashMap<>();
         params.put("client_id", AuthConstant.ADMIN_CLIENT_ID);
-        params.put("client_secret","123456");
-        params.put("grant_type","password");
-        params.put("username",username);
-        params.put("password",password);
+        params.put("client_secret", "123456");
+        params.put("grant_type", "password");
+        params.put("username", username);
+        params.put("password", password);
         CommonResult restResult = authService.getAccessToken(params);
-        if(ResultCode.SUCCESS.getCode()==restResult.getCode()&&restResult.getData()!=null){
+        if (ResultCode.SUCCESS.getCode() == restResult.getCode() && restResult.getData() != null) {
 //            updateLoginTimeByUsername(username);
             insertLoginLog(username);
         }
@@ -107,11 +107,12 @@ public class UmsAdminServiceImpl implements UmsAdminService {
 
     /**
      * 添加登录记录
+     *
      * @param username 用户名
      */
     private void insertLoginLog(String username) {
         UmsAdmin admin = getAdminByUsername(username);
-        if(admin==null) {
+        if (admin == null) {
             return;
         }
         UmsAdminLoginLog loginLog = new UmsAdminLoginLog();
@@ -155,14 +156,14 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     public int update(Long id, UmsAdmin admin) {
         admin.setId(id);
         UmsAdmin rawAdmin = adminMapper.selectByPrimaryKey(id);
-        if(rawAdmin.getPassword().equals(admin.getPassword())){
+        if (rawAdmin.getPassword().equals(admin.getPassword())) {
             //与原加密密码相同的不需要修改
             admin.setPassword(null);
-        }else{
+        } else {
             //与原加密密码不同的需要加密修改
-            if(StrUtil.isEmpty(admin.getPassword())){
+            if (StrUtil.isEmpty(admin.getPassword())) {
                 admin.setPassword(null);
-            }else{
+            } else {
                 admin.setPassword(BCrypt.hashpw(admin.getPassword()));
             }
         }
@@ -211,19 +212,19 @@ public class UmsAdminServiceImpl implements UmsAdminService {
 
     @Override
     public int updatePassword(UpdateAdminPasswordParam param) {
-        if(StrUtil.isEmpty(param.getUsername())
-                ||StrUtil.isEmpty(param.getOldPassword())
-                ||StrUtil.isEmpty(param.getNewPassword())){
+        if (StrUtil.isEmpty(param.getUsername())
+                || StrUtil.isEmpty(param.getOldPassword())
+                || StrUtil.isEmpty(param.getNewPassword())) {
             return -1;
         }
         UmsAdminExample example = new UmsAdminExample();
         example.createCriteria().andUsernameEqualTo(param.getUsername());
         List<UmsAdmin> adminList = adminMapper.selectByExample(example);
-        if(CollUtil.isEmpty(adminList)){
+        if (CollUtil.isEmpty(adminList)) {
             return -2;
         }
         UmsAdmin umsAdmin = adminList.get(0);
-        if(!BCrypt.checkpw(param.getOldPassword(),umsAdmin.getPassword())){
+        if (!BCrypt.checkpw(param.getOldPassword(), umsAdmin.getPassword())) {
             return -3;
         }
         umsAdmin.setPassword(BCrypt.hashpw(param.getNewPassword()));
@@ -233,14 +234,14 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     }
 
     @Override
-    public UserDto loadUserByUsername(String username){
+    public UserDto loadUserByUsername(String username) {
         //获取用户信息
         UmsAdmin admin = getAdminByUsername(username);
         if (admin != null) {
             List<UmsRole> roleList = getRoleList(admin.getId());
             UserDto userDTO = new UserDto();
-            BeanUtils.copyProperties(admin,userDTO);
-            if(CollUtil.isNotEmpty(roleList)){
+            BeanUtils.copyProperties(admin, userDTO);
+            if (CollUtil.isNotEmpty(roleList)) {
                 List<String> roleStrList = roleList.stream().map(item -> item.getId() + "_" + item.getName()).collect(Collectors.toList());
                 userDTO.setRoles(roleStrList);
             }
@@ -252,14 +253,14 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     @Override
     public UmsAdmin getCurrentAdmin() {
         String userStr = request.getHeader(AuthConstant.USER_TOKEN_HEADER);
-        if(StrUtil.isEmpty(userStr)){
+        if (StrUtil.isEmpty(userStr)) {
             Asserts.fail(ResultCode.UNAUTHORIZED);
         }
         UserDto userDto = JSONUtil.toBean(userStr, UserDto.class);
         UmsAdmin admin = getCacheService().getAdmin(userDto.getId());
-        if(admin!=null){
+        if (admin != null) {
             return admin;
-        }else{
+        } else {
             admin = adminMapper.selectByPrimaryKey(userDto.getId());
             getCacheService().setAdmin(admin);
             return admin;

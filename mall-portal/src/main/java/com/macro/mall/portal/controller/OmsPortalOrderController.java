@@ -38,7 +38,7 @@ public class OmsPortalOrderController {
     @ApiOperation("根据购物车信息生成订单")
     @RequestMapping(value = "/generateOrder", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult generateOrder(@RequestBody OrderParam orderParam) throws NullPointerException{
+    public CommonResult generateOrder(@RequestBody OrderParam orderParam) throws NullPointerException {
         Map<String, Object> result = portalOrderService.generateOrder(orderParam);
         return CommonResult.success(result, "下单成功");
     }
@@ -46,8 +46,8 @@ public class OmsPortalOrderController {
     @ApiOperation("用户支付成功的回调")
     @RequestMapping(value = "/paySuccess", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult paySuccess(@RequestParam Long orderId,@RequestParam Integer payType) {
-        Integer count = portalOrderService.paySuccess(orderId,payType);
+    public CommonResult paySuccess(@RequestParam Long orderId, @RequestParam Integer payType) {
+        Integer count = portalOrderService.paySuccess(orderId, payType);
         return CommonResult.success(count, "支付成功");
     }
 
@@ -73,9 +73,9 @@ public class OmsPortalOrderController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<CommonPage<OmsOrderDetail>> list(@RequestParam Integer status,
-                                                   @RequestParam(required = false, defaultValue = "1") Integer pageNum,
-                                                   @RequestParam(required = false, defaultValue = "5") Integer pageSize) {
-        CommonPage<OmsOrderDetail> orderPage = portalOrderService.list(status,pageNum,pageSize);
+                                                         @RequestParam(required = false, defaultValue = "1") Integer pageNum,
+                                                         @RequestParam(required = false, defaultValue = "5") Integer pageSize) {
+        CommonPage<OmsOrderDetail> orderPage = portalOrderService.list(status, pageNum, pageSize);
         return CommonResult.success(orderPage);
     }
 

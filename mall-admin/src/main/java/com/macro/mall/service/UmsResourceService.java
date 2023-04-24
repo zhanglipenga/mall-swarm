@@ -43,5 +43,5 @@ public interface UmsResourceService {
     /**
      * 初始化资源角色规则
      */
-    Map<String,List<String>> initResourceRolesMap();
+    Map<String, List<String>> initResourceRolesMap();
 }

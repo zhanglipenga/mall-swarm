@@ -33,6 +33,7 @@ public class UmsResourceServiceImpl implements UmsResourceService {
     private RedisService redisService;
     @Value("${spring.application.name}")
     private String applicationName;
+
     @Override
     public int create(UmsResource umsResource) {
         umsResource.setCreateTime(new Date());
@@ -63,17 +64,17 @@ public class UmsResourceServiceImpl implements UmsResourceService {
 
     @Override
     public List<UmsResource> list(Long categoryId, String nameKeyword, String urlKeyword, Integer pageSize, Integer pageNum) {
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         UmsResourceExample example = new UmsResourceExample();
         UmsResourceExample.Criteria criteria = example.createCriteria();
-        if(categoryId!=null){
+        if (categoryId != null) {
             criteria.andCategoryIdEqualTo(categoryId);
         }
-        if(StrUtil.isNotEmpty(nameKeyword)){
-            criteria.andNameLike('%'+nameKeyword+'%');
+        if (StrUtil.isNotEmpty(nameKeyword)) {
+            criteria.andNameLike('%' + nameKeyword + '%');
         }
-        if(StrUtil.isNotEmpty(urlKeyword)){
-            criteria.andUrlLike('%'+urlKeyword+'%');
+        if (StrUtil.isNotEmpty(urlKeyword)) {
+            criteria.andUrlLike('%' + urlKeyword + '%');
         }
         return resourceMapper.selectByExample(example);
     }
@@ -84,15 +85,15 @@ public class UmsResourceServiceImpl implements UmsResourceService {
     }
 
     @Override
-    public Map<String,List<String>> initResourceRolesMap() {
-        Map<String,List<String>> resourceRoleMap = new TreeMap<>();
+    public Map<String, List<String>> initResourceRolesMap() {
+        Map<String, List<String>> resourceRoleMap = new TreeMap<>();
         List<UmsResource> resourceList = resourceMapper.selectByExample(new UmsResourceExample());
         List<UmsRole> roleList = roleMapper.selectByExample(new UmsRoleExample());
         List<UmsRoleResourceRelation> relationList = roleResourceRelationMapper.selectByExample(new UmsRoleResourceRelationExample());
         for (UmsResource resource : resourceList) {
             Set<Long> roleIds = relationList.stream().filter(item -> item.getResourceId().equals(resource.getId())).map(UmsRoleResourceRelation::getRoleId).collect(Collectors.toSet());
             List<String> roleNames = roleList.stream().filter(item -> roleIds.contains(item.getId())).map(item -> item.getId() + "_" + item.getName()).collect(Collectors.toList());
-            resourceRoleMap.put("/"+applicationName+resource.getUrl(),roleNames);
+            resourceRoleMap.put("/" + applicationName + resource.getUrl(), roleNames);
         }
         redisService.del(AuthConstant.RESOURCE_ROLES_MAP_KEY);
         redisService.hSetAll(AuthConstant.RESOURCE_ROLES_MAP_KEY, resourceRoleMap);

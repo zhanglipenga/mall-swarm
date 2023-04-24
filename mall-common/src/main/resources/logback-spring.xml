@@ -8,7 +8,7 @@
     <!--应用名称-->
     <springProperty scope="context" name="APP_NAME" source="spring.application.name" defaultValue="springBoot"/>
     <!--日志文件保存路径-->
-<!--    <property name="LOG_FILE_PATH" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/logs}"/>-->
+    <!--    <property name="LOG_FILE_PATH" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/logs}"/>-->
     <property name="LOG_FILE_PATH" value="logs}"/>
     <!--LogStash访问host-->
     <springProperty name="LOG_STASH_HOST" scope="context" source="192.168.244.129" defaultValue="192.168.244.129"/>
@@ -88,11 +88,11 @@
             </providers>
         </encoder>
         <!--当有多个LogStash服务时，设置访问策略为轮询-->
-<!--        <connectionStrategy>-->
-<!--            <roundRobin>-->
-<!--                <connectionTTL>1 minutes</connectionTTL>-->
-<!--            </roundRobin>-->
-<!--        </connectionStrategy>-->
+        <!--        <connectionStrategy>-->
+        <!--            <roundRobin>-->
+        <!--                <connectionTTL>1 minutes</connectionTTL>-->
+        <!--            </roundRobin>-->
+        <!--        </connectionStrategy>-->
     </appender>
 
     <!--ERROR日志输出到LogStash-->
@@ -126,11 +126,11 @@
             </providers>
         </encoder>
         <!--当有多个LogStash服务时，设置访问策略为轮询-->
-<!--        <connectionStrategy>-->
-<!--            <roundRobin>-->
-<!--                <connectionTTL>1 minutes</connectionTTL>-->
-<!--            </roundRobin>-->
-<!--        </connectionStrategy>-->
+        <!--        <connectionStrategy>-->
+        <!--            <roundRobin>-->
+        <!--                <connectionTTL>1 minutes</connectionTTL>-->
+        <!--            </roundRobin>-->
+        <!--        </connectionStrategy>-->
     </appender>
 
     <!--业务日志输出到LogStash-->
@@ -159,11 +159,11 @@
             </providers>
         </encoder>
         <!--当有多个LogStash服务时，设置访问策略为轮询-->
-<!--        <connectionStrategy>-->
-<!--            <roundRobin>-->
-<!--                <connectionTTL>1 minutes</connectionTTL>-->
-<!--            </roundRobin>-->
-<!--        </connectionStrategy>-->
+        <!--        <connectionStrategy>-->
+        <!--            <roundRobin>-->
+        <!--                <connectionTTL>1 minutes</connectionTTL>-->
+        <!--            </roundRobin>-->
+        <!--        </connectionStrategy>-->
     </appender>
 
     <!--接口访问记录日志输出到LogStash-->
@@ -189,11 +189,11 @@
             </providers>
         </encoder>
         <!--当有多个LogStash服务时，设置访问策略为轮询-->
-<!--        <connectionStrategy>-->
-<!--            <roundRobin>-->
-<!--                <connectionTTL>1 minutes</connectionTTL>-->
-<!--            </roundRobin>-->
-<!--        </connectionStrategy>-->
+        <!--        <connectionStrategy>-->
+        <!--            <roundRobin>-->
+        <!--                <connectionTTL>1 minutes</connectionTTL>-->
+        <!--            </roundRobin>-->
+        <!--        </connectionStrategy>-->
     </appender>
 
     <!--控制框架输出日志-->
